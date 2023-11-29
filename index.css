@@ -1,0 +1,189 @@
+*{
+ margin: 0;
+    padding: 0;
+    color: white;
+}
+.sidebar{
+    background-color:black;
+    width: 15vw;
+    height: 100vh;
+}
+.sidebar nav{
+    padding: 30px;
+}
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 35px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;  
+    /* color: rgb(235, 252, 6); */
+}
+.main{
+    background-color: rgb(17 8 30);
+    width: 85vw;
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+  /*  background-color: green;*/
+    height: 60vh;
+    width: 80vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+.a{
+    position: relative;
+    text-decoration: none;
+}
+.a:before{
+    content: "";
+    position:absolute;
+    background-color: rgb(255, 0, 76);
+    height:3px;
+    width:0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.a:hover{
+    /* color: rgb(139 237 10); */
+    color: #04a111;
+}
+.a:hover:before{
+    width:100%;
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+.hello{
+    font-size: 40px;
+}
+
+.name {
+    font-size: 55px;
+    font-weight: 550;
+    /* color:  #06f90e; */
+    width: max-content;
+   /* display: inline-block; */
+}
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: typing 4.0s steps(50,end)backwards infinite;
+    font-size: 3.6rem;
+    width: 0;
+    color:  #04a111;
+}
+@keyframes typing{
+    from{width:0}
+    to {width: 100% }
+    
+}
+
+
+
+.about{
+    font-size: 50px;
+    font-weight: 600;
+    
+}
+.buttons a{
+    padding-top: 50px;  
+    text-decoration: none; 
+}
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color:  rgb(17 8 30);
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: purple;
+    font-weight: bolder;
+    background-color:white ;
+}
+
+.devPic img{
+    height: 50vh; 
+    border-radius: 50%;
+}
+
+.contactform{
+    /* padding-top: 150px; */
+    padding: 60px 20px;
+}
+
+.contactform div{
+    padding: 10px 0;
+    padding-left: 20vw;
+    font-weight: 500;
+}
+.mail,.phone,.Name,.enquiries{
+    display: flex;
+    flex-direction: column;
+}
+.inputmail,.inputphone,.inputname,.inputenquiries{
+    width: 25vw;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 3px 0;
+    border-width: 2px;
+}
+p{
+    padding: 0 1vw;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+h1{
+    padding: 5vh 2vw;
+    text-align: center;
+    color:  #04a111;
+    
+}
+.skillcontainer{
+    height: 30vh;
+    width: 100%;
+    /* background-color:blue; */
+    display: flex;
+    flex-direction: row;
+}
+.skill{
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    margin: 5px 20px;
+    /* background-color: red; */
+    width: 15vw;
+}
+.ratio{
+    /* font-size: 20px; */ 
+    margin : 9px 19px;
+    /* padding: 7px; */
+    background-color:rgb(236, 233, 233);
+    height: 14px;
+    width: 15vw;
+    border-radius: 10px;
+    text-align: right; 
+    font-size: 10px;
+
+}
+.range{
+    /* background-color: rgb(56, 54, 54); */
+   background-color: #921131;
+    height: 14px;
+    border-radius: 10px;
+}
